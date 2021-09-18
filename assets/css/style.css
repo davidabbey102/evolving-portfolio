@@ -9,11 +9,24 @@ body {
     background-color: #d9dcd6;
 }
 
+main {
+    display:flex;
+    flex: 1 0 100%;
+    flex-grow:2;
+    flex-direction: column;
+    min-height: 80px;
+    flex-wrap: wrap;
+    margin: 0;
+    width:100%;
+    /* justify-content:space-around; */
+}
+
 header {
     position: fixed;
-    height: 80px;
+    display: flex;
+    height: 90px;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: coral;
     color: #ffffff;
@@ -21,23 +34,33 @@ header {
 }
 
 header h1 {
-    display: inline-block;
-    font-size: 48px;
+    display: inline-flex;
+    font-size: 36px;
+    line-height: 30px;
+    /* vertical-align: middle; */
+    /* text-align: justify; */
+    background-color: lightblue;
+    padding: 25px 15px 50px 15px;
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+    flex-grow: .95;
+    /* border: 1px dashed red; */
+    text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+header nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding-top: 25px;
 }
 
 header nav ul li {
+    list-style-type: none;
     text-align: right;
-    display: inline;
-    margin-left: 25px;
-    font-size: 30px;
+    margin: 0 15px;
 }
 
 a {
@@ -45,35 +68,82 @@ a {
     text-decoration: none;
 }
 
-p {
+/* p {
     font-size: 16px;
-}
+} */
 
 .paper {
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
-    /* background-image: url(".assets/images/digital-marketing-meeting.jpg"); */
     background-size: cover;
     background-position: center;
 }
 
-.about {
-    padding: 20px;
-    margin: 20px;
 
+h2 {
+    height: inherit;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    border: 10px dashed green;
+    font-style: italic;
+    font-size: 40px;
+    display: inline;
+    padding-right: 10px;
+    border-right: 7px solid black;
+    float: left;
+    margin-right: 25px;
+}
+
+.about {
+    max-height: 280px fit-content;
+    border: 10px dashed violet;
+    /* padding: 20px; */
+    /* margin: 20px; */
+    /* width: 100vw; */
+    /* position: relative; */
 }
 
 .about h2 {
-    text-decoration: ;
+    padding: 120px 0;
+    /* padding: 50% 0; */
+    /* height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 10px dashed green;
+    font-style: italic;
     font-size: 36px;
     display: inline;
     padding-right: 10px;
     border-right: 7px solid black;
+    float: left; */
 }
 
-.about h2 p {
-    display: inline-block;
+.about p {
+    /* border: 10px dotted red; */
+    display: inline;
+    font-size: 21px;
+    /* padding-left: 300px; */
+    /* style="margin: ; */
+}
+
+.portfolio {
+    max-height: 400px fit-content;
+    /* width: 100%; */
+    border: 10px dashed violet;
+    /* padding: 20px; */
+    margin: 20px 0 0 0;
+    /* width: 100vw; */
+    /* position: relative; */
+}
+.portfolio h2 {
+    padding: 170px 0;
+}
+
+.my-work {
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 
 .float-left {
@@ -215,3 +285,24 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 992px) {
+    header {
+      height: 120px;
+      font-size: 25px;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    header {
+      height: 200px;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    header {
+      height: 300px;
+    }
+  }
