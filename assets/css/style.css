@@ -16,9 +16,7 @@ main {
     flex-direction: column;
     min-height: 80px;
     flex-wrap: wrap;
-    margin: 0 100px;
-    /* width:100%; */
-    /* justify-content:space-around; */
+    margin-left: 100px;
 }
 
 .main-header {
@@ -26,7 +24,6 @@ main {
     display: flex;
     height: 90px;
     width: 100%;
-    /* padding: 10px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: coral;
     color: #ffffff;
@@ -38,15 +35,12 @@ main {
     display: inline-flex;
     font-size: 36px;
     line-height: 30px;
-    /* vertical-align: middle; */
-    /* text-align: justify; */
     background-color: lightblue;
     padding: 25px 15px 50px 15px;
 }
 
 .main-header nav {
     flex-grow: .95;
-    /* border: 1px dashed red; */
     text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -69,10 +63,6 @@ a {
     text-decoration: none;
 }
 
-/* p {
-    font-size: 16px;
-} */
-
 .paper {
     height: 200px;
     width: 100%;
@@ -81,144 +71,74 @@ a {
     background-position: center;
 }
 
-
 h2 {
     border-right: 7px solid black;
     width: 200px;
     font-style: italic;
     font-size: 40px;
-    /* height: inherit;
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    border: 10px dashed green;
-    font-style: italic;
-    font-size: 40px;
-    display: inline;
-    padding-right: 10px;
-    border-right: 7px solid black;
-    float: left;
-    margin-right: 25px; */
 }
 
 .about {
     height: 350px;
-    border: 10px dashed violet;
-    /* padding: 20px; */
-    /* margin: 20px; */
-    /* width: 100vw; */
-    /* position: relative; */
+    /* border: 10px dashed violet; */
+    width: 1375px;
 }
 
 .about h2 {
     height: 100%;
-    
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* border: 10px dashed green; */
-    
-    /* display: inline; */
-    /* padding-right: 10px; */
-    
     float: left;
     margin-right: 25px;
     padding: 120px 0;
-    /* padding: 50% 0; */
-    /* height: 100%;
-    display: flex;
-    flex-direction: row;
-    border: 10px dashed green;
-    font-style: italic;
-    font-size: 36px;
-    display: inline;
-    padding-right: 10px;
-    border-right: 7px solid black;
-    float: left; */
 }
 
 .about p {
-    /* border: 10px dotted red; */
     display: inline;
     font-size: 21px;
-    /* padding-left: 300px; */
-    /* style="margin: ; */
 }
 
 .portfolio {
     display: inline;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* height: 1473.5px; */
-    /* width: 100%; */
-    border: 10px dashed violet;
-    /* padding: 20px; */
+    width: 1375px;
+    /* border: 10px dashed violet; */
     margin: 20px 0 0 0;
-    /* width: 100vw; */
-    /* position: relative; */
 }
 .portfolio h2 {
     padding: 170px 0;
     float: left;
     height: 1373px;
     padding: auto 0 auto 0;
-    /* align-content: baseline; */
 }
 
 .my-work-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 10px ridge gray;
+    /* border: 10psx ridge gray; */
 }
 
 .card {    
-    /* margin: auto; */
-    /* justify-content: space-evenly; */
-    /* align-content:space-between; */
     margin: 10px auto 0 auto;
-    border: 10px dashed red;
+    /* border: 10px dashed red; */
     display: inline;
-    
-    /* position: relative; */
     text-align: center;
     color: white;
 }
 
 .card-header {
-    /* display: inline; */
-    border: 10px dotted yellow;
+    /* border: 10px dotted yellow; */
     display: block;
     width: 200px;
     background-color: lightblue;
     align-items: center;
-    /* opacity: 25%; */
     margin-left: auto;
     margin-right: auto;
-
-    /* position: relative; */
-    /* display: flex; */
-    /* height: 90px; */
-    /* width: 100%; */
-    /* padding: 10px; */
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: coral;
-    color: #ffffff;
-    border-bottom: 5px solid black; */
-}
-
-.images {
-    /* margin-top: 20px; */
-    /* align-content: space-between; */
-    /* display: inline-flex; */
-    /* justify-items: space-evenly; */
-    /* border: 7.5px solid lightblue; */
-    box-shadow: 75px;
 }
 
 .contact {
     display: inline-block;
-    border: 10px dashed violet;
+    /* border: 10px dashed violet; */
     margin-top: 20px;
+    width: 1375px;
 }
 
 .contact h2 {
@@ -228,156 +148,32 @@ h2 {
 .contact nav {
     flex-grow: 2;
     display: inline-flex;
-    /* width: 100%; */
-    /* text-align: right; */
-    border: 10px dashed purple;
+    margin-top: 30px;
 }
 
 .contact nav ul {
-    /* display: inline; */
-    border: 10px dashed orange;
-    list-style: none;
+    display: flex;
+    align-items: stretch;
+    width: 1155px;
+    font-size: 20px;
+    justify-content: space-evenly;
 }
 
 .contact nav ul li {
-    display: inline;
+    display: block;
+    flex: 0 1 auto;
     text-decoration: underline;
     font-weight: bold;
-    margin: 0 35px;
-    /* justify-content: space-evenly; */
 }
-
-
-
-/* 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-} */
 
 footer {
     height: 90px;
     width: 100%;
-    /* padding: 10px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: coral;
     color: #ffffff;
     border-top: 5px solid black;
     margin-top: 25px;
-    /* margin: auto; */
 }
 
 footer h2 {
