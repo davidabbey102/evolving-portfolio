@@ -1,3 +1,4 @@
+/* Control/main areas/general control*/
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
@@ -19,6 +20,20 @@ main {
     margin-left: 100px;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h2 {
+    border-right: 7px solid black;
+    width: 200px;
+    font-style: italic;
+    font-size: 40px;
+}
+
+
+/* Header settings */
 .main-header {
     position: fixed;
     display: flex;
@@ -29,7 +44,6 @@ main {
     color: #ffffff;
     border-bottom: 5px solid black;
 }
-
 
 .main-header h1 {
     display: inline-flex;
@@ -56,11 +70,8 @@ main {
     margin: 0 15px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
+/* Background image */
 .paper {
     height: 250px;
     width: 107%;
@@ -80,16 +91,10 @@ a {
     
 }
 
-h2 {
-    border-right: 7px solid black;
-    width: 200px;
-    font-style: italic;
-    font-size: 40px;
-}
 
+/* About me */
 .about {
     height: 350px;
-    /* border: 10px dashed violet; */
     width: 1375px;
     margin-top: 25px;
 }
@@ -106,10 +111,11 @@ h2 {
     font-size: 21px;
 }
 
+
+/* My work */
 .portfolio {
     display: inline;
     width: 1375px;
-    /* border: 10px dashed violet; */
     margin: 20px 0 0 0;
 }
 .portfolio h2 {
@@ -123,19 +129,16 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* border: 10psx ridge gray; */
 }
 
 .card {    
     margin: 10px auto 0 auto;
-    /* border: 10px dashed red; */
     display: inline;
     text-align: center;
     color: white;
 }
 
 .card-header {
-    /* border: 10px dotted yellow; */
     display: block;
     width: 200px;
     background-color: lightblue;
@@ -144,9 +147,10 @@ h2 {
     margin-right: auto;
 }
 
+
+/* Contact me */
 .contact {
     display: inline-block;
-    /* border: 10px dashed violet; */
     margin-top: 20px;
     width: 1375px;
 }
@@ -176,6 +180,8 @@ h2 {
     font-weight: bold;
 }
 
+
+/* Footer */
 footer {
     height: 90px;
     width: 100%;
@@ -194,6 +200,8 @@ footer h2 {
     border: none;
 } 
 
+
+/* Meadias */
 @media screen and (max-width: 992px) {
     main {
         margin-left: 66px;
@@ -206,8 +214,7 @@ footer h2 {
       height: 120px;
       font-size: 25px;
     }
-}
-  
+}  
   
 @media screen and (max-width: 768px) {
       main {
@@ -220,8 +227,7 @@ footer h2 {
       .contact {
         width: 50%;
       }
-}
-  
+}  
  
 @media screen and (max-width: 576px) {
       main {
