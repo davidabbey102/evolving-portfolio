@@ -1,6 +1,10 @@
 # evolving-portfolio
 
+Deployed: https://davidabbey102.github.io/evolving-portfolio/
 
-https://davidabbey102.github.io/evolving-portfolio/
+Github: https://github.com/davidabbey102/evolving-portfolio
 
-![portfolio screencapture](https://user-images.githubusercontent.com/90018131/134102376-e9e05ad9-e5ad-4dba-90db-b2b2d62f7266.png)
+
+
+
+![image](https://user-images.githubusercontent.com/90018131/136731656-c5a48b0a-a78a-4c0d-967c-ed77b3bebccc.png)

@@ -8,6 +8,7 @@
 
 body {
     background-color: #d9dcd6;
+    /* padding-top: 25px; */
 }
 
 main {
@@ -49,7 +50,7 @@ h2 {
     display: inline-flex;
     font-size: 36px;
     line-height: 30px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 25px 15px 50px 15px;
 }
 
@@ -94,41 +95,43 @@ h2 {
 
 /* About me */
 .about {
-    height: 350px;
-    width: 1375px;
+    /* height: 350px;
+    width: 1375px; */
     margin-top: 25px;
 }
 
-.about h2 {
+/* .about h2 {
     height: 100%;
     float: left;
     margin-right: 25px;
     padding: 120px 0;
-}
+} */
 
 .about p {
-    display: inline;
+    /* display: inline; */
     font-size: 21px;
 }
 
 
 /* My work */
 .portfolio {
-    display: inline;
-    width: 1375px;
+    /* display: inline; */
+    /* width: 1375px; */
     margin: 20px 0 0 0;
 }
 .portfolio h2 {
-    padding: 170px 0;
-    float: left;
-    height: 1373px;
+    /* padding: 170px 0; */
+    /* float: left; */
+    /* height: 1373px; */
     padding: auto 0 auto 0;
 }
 
 .my-work-box {
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .card {    
@@ -152,7 +155,7 @@ h2 {
 .contact {
     display: inline-block;
     margin-top: 20px;
-    width: 1375px;
+    /* width: 1375px; */
 }
 
 .contact h2 {
@@ -184,7 +187,7 @@ h2 {
 /* Footer */
 footer {
     height: 90px;
-    width: 100%;
+    width: 100vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: coral;
     color: #ffffff;
@@ -200,6 +203,20 @@ footer h2 {
     border: none;
 } 
 
+#project-1 {
+    height: 600px;
+    width: 900px;
+}
+
+#project-2 {
+    width: 500px;
+    height: 250px
+}
+
+#project-3 {
+    width: 500px;
+    height: 250px;
+}
 
 /* Meadias */
 @media screen and (max-width: 992px) {
